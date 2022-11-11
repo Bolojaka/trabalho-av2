@@ -1,0 +1,12 @@
+taxa = float(input("digite a taxa de imposto: "))
+custo = float(input("digite o custo do produto: "))
+def imposto(taxaimposto, custo):
+  soma = (0 + taxaimposto/100)*custo
+  return soma
+def total(taxaimposto, custo):
+  soma = (1 + taxaimposto/100)*custo
+  return soma
+valor_imposto = imposto(taxa, custo)
+valor_total = total(taxa, custo)
+print(f"o valor de imposto que sera adcionado: {valor_imposto}")
+print("valor total do produto: {valor_total}")
